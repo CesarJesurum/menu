@@ -1,0 +1,93 @@
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%; 
+  }/*tipo de letra en la tabla de cuentas*/
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px; 
+  }/*tamaño y color de bordes en la tabla*/
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;} 
+
+  #customers tr:hover {background-color: #ddd;} /*color que tomara cada fila y columna en la tabla al poner el puntero encima*/
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  } /*colores del encabezado de la tabla y las letras*/
+
+ body{
+    background-image: url("imagen/Edificios.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }/*imagen de fondo en la pagina*/
+ 
+ h1{
+  color: #ddd;
+  font-style: normal;
+ }/*color del encabezado 1*/
+
+a:link, a:visited{
+    background-color: rgb(0, 149, 255);
+    color: aliceblue;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+}/*diseño del boton de pagina principal en la pagina*/
+
+a:hover, a:active{
+    background-color: rgb(240, 248, 255);
+    color: rgb(0, 153, 255);
+    display: inline;
+}/*diseño del boton de pagina principal cuando pones el puntero encima*/
+
+.dropdownbutton{
+  background-color: rgb(0, 149, 255);
+  padding: 14px 25px;
+  color: aliceblue;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}/*diseño y color del dropdown*/
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-height: 160px;
+  z-index: 1;
+}/*contenido del dropdown*/
+
+.dropdown-content a{
+  color: black;
+  padding: 14px 25px;
+  text-decoration: none;
+  display: block;
+}/*diseño de los botones dentro de la pagina*/
+
+.dropdown-content a:hover{background-color: #ddd;} /*color que tomara al hacer el hover*/
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}/*enseña el dropdown*/
+
+.dropdown:hover .dropdownbutton{
+  background-color:  rgb(0, 149, 255);
+}/*cambio de color cuando el dropdown se ejecuta*/
+
+
+
+
